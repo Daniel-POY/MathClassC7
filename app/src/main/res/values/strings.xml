@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MathClassC7</string>
+
+    <string-array name="choice">
+        <item>a</item>
+        <item>b</item>
+    </string-array>
+</resources>

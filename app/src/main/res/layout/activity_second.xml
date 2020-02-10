@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outputFour" />
+
+    <TextView
+        android:id="@+id/twoHeaderMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="OUTPUT"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/twoHeaderOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="1. Division/Multiplication"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoHeaderMain" />
+
+    <TextView
+        android:id="@+id/twoHeaderTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="2. Addition"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/twoLabelTwo"
+        app:layout_constraintTop_toBottomOf="@+id/twoLabelTwo" />
+
+    <TextView
+        android:id="@+id/twoHeaderThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="3. Name"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/twoLabelThree"
+        app:layout_constraintTop_toBottomOf="@+id/twoLabelThree" />
+
+    <TextView
+        android:id="@+id/twoLabelOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Operation Used:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/twoHeaderOne"
+        app:layout_constraintTop_toBottomOf="@+id/twoHeaderOne" />
+
+    <TextView
+        android:id="@+id/twoLabelTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="ANSWER:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/twoLabelOne"
+        app:layout_constraintTop_toBottomOf="@+id/twoLabelOne" />
+
+    <TextView
+        android:id="@+id/twoLabelThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ANSWER:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/twoLabelOne"
+        app:layout_constraintTop_toBottomOf="@+id/twoHeaderTwo" />
+
+    <TextView
+        android:id="@+id/outputFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="FULL NAME FULL NAME FULL NAME"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/twoHeaderThree"
+        app:layout_constraintTop_toBottomOf="@+id/twoHeaderThree" />
+
+    <TextView
+        android:id="@+id/outputOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPERATION"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twoLabelOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twoLabelOne"
+        app:layout_constraintTop_toTopOf="@+id/twoLabelOne" />
+
+    <TextView
+        android:id="@+id/outputTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANSWER1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twoLabelTwo"
+        app:layout_constraintStart_toStartOf="@+id/outputOne"
+        app:layout_constraintTop_toTopOf="@+id/twoLabelTwo" />
+
+    <TextView
+        android:id="@+id/outputThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANSWER2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/twoLabelThree"
+        app:layout_constraintStart_toStartOf="@+id/outputOne"
+        app:layout_constraintTop_toTopOf="@+id/twoLabelThree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
