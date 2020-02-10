@@ -43,13 +43,12 @@ public class SecondActivity extends AppCompatActivity {
 
         if (callChoice.equals("a")) {
             callOutputOne.setText("Division");
-            callOutputTwo.setText(String.valueOf(newMath.firstDouble/newMath.secondDouble));
         } else if (callChoice.equals("b")) {
             callOutputOne.setText("Multiplication");
-            callOutputTwo.setText(String.valueOf(newMath.firstDouble*newMath.secondDouble));
         }
 
-        callOutputThree.setText(String.valueOf(newMath2.firstInt+newMath2.secondInt));
+        callOutputTwo.setText(String.valueOf(newMath.answerDouble));
+        callOutputThree.setText(String.valueOf(newMath2.answerInt));
         callOutputFour.setText(newMath3.firstString);
 
         callButtonBack.setOnClickListener(
